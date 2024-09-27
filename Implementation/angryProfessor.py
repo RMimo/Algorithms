@@ -16,7 +16,7 @@ import sys
 #
 
 def angryProfessor(k, a):
-    on_time = [1 if i <= 0 else 0 for i in a]
+    on_time = list(map(lambda x:1 if x <= 0 else 0, a))
     return "NO" if sum(on_time) >= k else "YES"
 
 if __name__ == '__main__':
