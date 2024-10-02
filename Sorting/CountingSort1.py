@@ -13,9 +13,9 @@ import re
 import sys
 
 def countingSort(arr):
-    counter = [0 for i in range(100)]
-    for i in arr:
-        counter[i] += 1
+    count = [0] * 100
+    for num in arr:
+        count[num] += 1
     return counter
     
 
